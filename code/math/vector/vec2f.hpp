@@ -2,7 +2,11 @@
 #define VEC2F_HPP
 #include <cmath>
 #include <core/core-math.hpp>
+#include <asm_types/xmmword.hpp>
+
+#ifdef GOO_ASM_MATH
 #include "vec-comp.hpp"
+#endif
 
 namespace gooapi::math {
 
@@ -30,6 +34,8 @@ namespace gooapi::math {
             };
             float v[2];
         };
+
+        Tvec2f() : Tvec2f(0.0f, 0.0f) {}
 
         Tvec2f(const float aX, const float aY) {
             this->x = aX;

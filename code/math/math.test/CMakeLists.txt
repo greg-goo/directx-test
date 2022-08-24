@@ -13,6 +13,10 @@ add_executable(goo-math.test
   "goo-math.vec3f.test.cpp"
   "goo-math.vec4f.test.cpp"
   "goo-math.vec.asm.test.cpp"
+  "goo-math.mat2f.test.cpp"
+  "goo-math.mat3f.test.cpp"
+  "goo-math.mat4f.test.cpp"
+  "goo-math.transform.test.cpp"
 )
 
 target_link_libraries(goo-math.test PUBLIC dx-math gtest_main)

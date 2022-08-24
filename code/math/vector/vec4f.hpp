@@ -3,7 +3,10 @@
 #include <cmath>
 #include <asm_types/xmmword.hpp>
 #include <core/core-math.hpp>
+
+#ifdef GOO_ASM_MATH
 #include "vec-comp.hpp"
+#endif
 
 namespace gooapi::math {
 
@@ -26,6 +29,8 @@ namespace gooapi::math {
             };
             float v[4];
         };
+
+        Tvec4f() : Tvec4f(0.0f, 0.0f, 0.0f, 0.0f) {};
 
         Tvec4f(const float aX, const float aY, const float aZ, const float aW) {
             this->x = aX;

@@ -2,6 +2,13 @@
 
 namespace gooapi::math {
     
+    /**
+     * @brief Sprawdza czy dwa wektory vec2f są równe
+     * 
+     * @param u Pierwszy wektor
+     * @param v Drugi wektor
+     * @return efekt sprawdzenia
+     */
     bool isEqual(const Tvec2f& u, const Tvec2f& v) {
         return (gooapi::math::abs(u.x - v.x) < EPSILON) &&
                (gooapi::math::abs(u.y - v.y) < EPSILON);

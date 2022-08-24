@@ -9,7 +9,6 @@ namespace gooapi::math {
     float toRadians(float deg);  // stopnie na radiany
     float toDegrees(float rad);  // radiany na stopnie
     float abs(float);
-
 }
 
 #endif
